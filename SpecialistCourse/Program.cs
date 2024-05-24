@@ -6,9 +6,9 @@
 
         struct FiguresData
         {
-            public int x, y;
-            public string colour;
-            public Figures ftype;
+            public int X, Y;
+            public string Colour;
+            public Figures FType;
 
         }
         static void Main(string[] args)
@@ -18,14 +18,14 @@
 
             // MOD2
             FiguresData figuresData = new FiguresData();
-            figuresData.ftype = Figures.Rectangle;
-            figuresData.x = 23;
-            figuresData.y = figuresData.x;
-            figuresData.colour = "red";
+            figuresData.FType = Figures.Rectangle;
+            figuresData.X = 23;
+            figuresData.Y = figuresData.X;
+            figuresData.Colour = "red";
 
-            Console.WriteLine($"Figures type = {figuresData.ftype};\n" +
-                              $"Figures colour = {figuresData.colour};\n" +
-                              $"Figures coordinate = ({figuresData.x},{figuresData.y})");
+            Console.WriteLine($"Figures type = {figuresData.FType};\n" +
+                              $"Figures colour = {figuresData.Colour};\n" +
+                              $"Figures coordinate = ({figuresData.X},{figuresData.Y})");
 
             Console.ReadLine();
 
