@@ -15,21 +15,21 @@ namespace DAY02
         {
             Console.Write("Введите число ворон на ветке: ");
             int inputNumber = int.Parse(Console.ReadLine());
-            int checkNumber = inputNumber; ;
-            if (inputNumber > 9) checkNumber %= 10;
             string resultString = "На ветке ";
-            switch(checkNumber)
-            {
-                case 1:
-                    resultString += $"{inputNumber} ворона.";
-                    break;
-                case int i when i > 1 && i < 5:
-                    resultString += $"{inputNumber} вороны.";
-                    break;
-                default:
-                    resultString += $"{inputNumber} ворон.";
-                    break;
-            }
+            if (inputNumber % 100 > 10 && inputNumber % 100 < 15) resultString += $"{inputNumber} ворон";
+            else 
+                switch(inputNumber%10)
+                {
+                    case 1:
+                        resultString += $"{inputNumber} ворона.";
+                        break;
+                    case int i when i > 1 && i < 5:
+                        resultString += $"{inputNumber} вороны.";
+                        break;
+                    default:
+                        resultString += $"{inputNumber} ворон.";
+                        break;
+                }
 
             
 
