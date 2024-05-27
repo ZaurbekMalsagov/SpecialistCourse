@@ -6,8 +6,12 @@ namespace DAY02
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello, World!");
-            RavenCounterLab1Mod3();
+            // Лабораторная 1
+            // RavenCounterLab1Mod3();
+
+
+            // Лабораторная 2
+            FibonachiNumbers();
         }
 
         // День 2, Модуль 3, Лабораторная 1 
@@ -34,6 +38,22 @@ namespace DAY02
             
 
             Console.WriteLine(resultString);
+        }
+
+        // День 2, Модуль 3, Лабораторная 2
+        private static void FibonachiNumbers()
+        {
+            int fiboNumber = 0, 
+                previousNumber = 1, 
+                temporaryNumber = fiboNumber;
+            Console.WriteLine(fiboNumber + "\n" + previousNumber);
+
+            while ( (fiboNumber = temporaryNumber+ previousNumber) < 1000)
+            {
+                temporaryNumber = previousNumber;
+                previousNumber = fiboNumber;
+                Console.WriteLine(fiboNumber);
+            }
         }
     }
 }
