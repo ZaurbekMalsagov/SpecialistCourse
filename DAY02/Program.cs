@@ -11,7 +11,10 @@ namespace DAY02
 
 
             // Лабораторная 2
-            FibonachiNumbers();
+            // FibonachiNumbers();
+
+            // Лабораторная 3
+            GetFactorial(3);
         }
 
         // День 2, Модуль 3, Лабораторная 1 
@@ -54,6 +57,19 @@ namespace DAY02
                 previousNumber = fiboNumber;
                 Console.WriteLine(fiboNumber);
             }
+        }
+
+        // День 2, Модуль 3, Лабораторная 3
+        private static void GetFactorial(int n)
+        {
+            int result = 1;
+            for (int i = result; i <= n; i++)
+            {
+                result *= i;
+            }
+            
+            Console.WriteLine($"Factorial {n} = " + result);
+
         }
     }
 }
