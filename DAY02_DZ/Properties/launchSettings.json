@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DAY02_DZ": {
+      "commandName": "Project",
+      "commandLineArgs": "232 4325 54356"
+    }
+  }
+}

@@ -71,5 +71,7 @@ namespace DAY02
             Console.WriteLine($"Factorial {n} = " + result);
 
         }
+
+         
     }
 }

@@ -19,7 +19,8 @@ namespace Geometry
             Console.WriteLine(AreaNew(fd));
             Console.WriteLine("Ok");
         }
-
+        
+        // Лабораторная работа 4
         private static double Area(Fdata fd)
         {
             double area = 0;
@@ -42,10 +43,10 @@ namespace Geometry
             return area;
         }
 
+        // Лабораторная работа 4 new
         private static double AreaNew(Fdata fd) => fd.type switch
         {
             Figures.Romb            => 0.5 * fd.a * fd.b,
-
             Figures.Rect            => fd.a * fd.b,
             Figures.RightTriangle   => (fd.a * fd.b) / 2,
             Figures.Circle          => Math.PI * Math.Pow(fd.a, 2),
