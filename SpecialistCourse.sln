@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAY01", "SpecialistCourse\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAY02", "DAY02\DAY02.csproj", "{BD16976C-8A8C-4083-B53B-0196CC7B3949}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "DAY02_Geometry\Geometry.csproj", "{F99A2AD9-8CA2-49F6-97F6-2744075C6CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAY02_Geometry", "DAY02_Geometry\DAY02_Geometry.csproj", "{F99A2AD9-8CA2-49F6-97F6-2744075C6CFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

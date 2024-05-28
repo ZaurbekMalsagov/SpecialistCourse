@@ -15,31 +15,31 @@ namespace Geometry
 
         static void Main(string[] args)
         {
-            //Fdata fd = new Fdata() { a = 4, b = 3, type = Figures.Romb };
-            //Console.WriteLine(area(fd));
+            Fdata fd = new Fdata() { a = 4, b = 3, type = Figures.Romb };
+            Console.WriteLine(Area(fd));
             Console.WriteLine("Ok");
         }
 
-        private static double CalculateSquare(Fdata fd)
+        private static double Area(Fdata fd)
         {
-            double square = 0;
+            double area = 0;
             switch (fd.type)
             {
                 case Figures.Romb:
-                    square = 0.5 * fd.a *fd.b;
+                    area = 0.5 * fd.a *fd.b;
                     break;
                 case Figures.Rect:
-                    square = fd.a * fd.b;
+                    area = fd.a * fd.b;
                     break;
                 case Figures.RightTriangle:
-                    square = (fd.a * fd.b)/2;
+                    area = (fd.a * fd.b)/2;
                     break;
                 case Figures.Circle:
-                    square = Math.PI * Math.Pow(fd.a,2);
+                    area = Math.PI * Math.Pow(fd.a,2);
                     break;
             }
 
-            return square;
+            return area;
         }
     }
 }
