@@ -16,7 +16,7 @@ namespace Geometry
         static void Main(string[] args)
         {
             Fdata fd = new Fdata() { a = 4, b = 3, type = Figures.Romb };
-            Console.WriteLine(Area(fd));
+            Console.WriteLine(AreaNew(fd));
             Console.WriteLine("Ok");
         }
 
@@ -41,5 +41,17 @@ namespace Geometry
 
             return area;
         }
+
+        private static double AreaNew(Fdata fd) => fd.type switch
+        {
+            Figures.Romb            => 0.5 * fd.a * fd.b,
+
+            Figures.Rect            => fd.a * fd.b,
+            Figures.RightTriangle   => (fd.a * fd.b) / 2,
+            Figures.Circle          => Math.PI * Math.Pow(fd.a, 2),
+            _                       => 0
+        };
+
+         
     }
 }
