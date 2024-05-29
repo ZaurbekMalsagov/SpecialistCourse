@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Geometry
+namespace DAY03_Geometry
 {
     enum Figures { Romb, Rect, RightTriangle, Circle }
     struct Fdata
