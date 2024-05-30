@@ -8,14 +8,12 @@ namespace DAY03
 {
     public abstract class Shape
     {
-        private string Colour {  get; set; }
-        private int X {  get; set; }
-        private int Y { get; set; }
+        private const string defaultColour = "BLACK";
+        protected string Colour {  get; set; }
 
-        public Shape(int x, int y, string colour = "BLACK") { 
-            this.X = x; 
-            this.Y = y; 
-            Colour = colour;
+        public Shape(string colour = defaultColour) { 
+
+            this.Colour = colour;
         }
 
         public abstract void Draw();

@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Point p1 = new Point(1, 2, "white");
+            p1.Draw();
         }
     }
 }
