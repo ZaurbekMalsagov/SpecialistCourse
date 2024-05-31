@@ -11,11 +11,10 @@ namespace DAY03
         private int X { get; set; }
         private int Y { get; set; }
 
-        public Point(int x, int y, string colour = "Black")
+        public Point(int x, int y, string colour = defaultColour) : base(colour)
         {
             this.X = x;
             this.Y = y;
-            Colour = colour;
 
         }
 

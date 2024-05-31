@@ -8,7 +8,7 @@ namespace DAY03
 {
     public abstract class Shape
     {
-        private const string defaultColour = "BLACK";
+        protected const string defaultColour = "BLACK";
         protected string Colour {  get; set; }
 
         public Shape(string colour = defaultColour) { 

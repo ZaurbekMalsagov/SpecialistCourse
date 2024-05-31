@@ -10,22 +10,34 @@ namespace DAY03
     {
         private int X { get; set; }
         private int Y { get; set; }
-        private double Scale { get; set; }
-        private double Radius {  get; set; }
+        private double _radius;
 
-        public Circle(int x, int y, double radius, int scale = 1, string colour = "Black")
+        private double Radius {
+            get => _radius;
+            set
+            {
+                if (value > 0)
+                {
+                    _radius = value;
+                }
+                else
+                {
+                    throw new ArgumentException("radius <= 0");
+                }
+            }
+        }
+
+        public Circle(int x, int y, double radius, string colour = defaultColour) : base(colour)
         {
             this.X = x;
             this.Y = y;
-            this.Radius = radius * scale;
-            this.Scale = scale;
-            this.Colour = colour;
+            this.Radius = radius;
 
         }
 
-        public override void Draw() =>  Console.WriteLine($"This circle point ({X},{Y}), radius = {Radius}, colour = {Colour} and Scale = {Scale}");
+        public override void Draw() => Console.WriteLine($"This circle point ({X},{Y}), radius = {Radius}, colour = {Colour}");
 
-        public override string ToString() => $"This circle point ({X},{Y}), radius = {Radius}, colour = {Colour} and Scale = {Scale}";
+        public override string ToString() => $"This circle point ({X},{Y}), radius = {Radius}, colour = {Colour}";
 
         public void MoveBy(int dx, int dy)
         {
@@ -33,10 +45,8 @@ namespace DAY03
             this.Y += dy;
         }
 
-        public void AddScale(double factor)
-        {
-            Scale = factor;
-            this.Radius *= factor;
+        public void Scale (double factor){
+            Radius = (int) Math.Round(factor* Radius);
         }
     }
 }
