@@ -11,7 +11,7 @@ namespace DAY03
         private int X { get; set; }
         private int Y { get; set; }
 
-        public Point(int x, int y, string colour)
+        public Point(int x, int y, string colour = "Black")
         {
             this.X = x;
             this.Y = y;
@@ -23,5 +23,7 @@ namespace DAY03
         {
             Console.WriteLine($"This shape point ({X},{Y}) colour = {Colour}");
         }
+
+        public override string ToString() => ($"This shape point ({X},{Y}) colour = {Colour}");
     }
 }

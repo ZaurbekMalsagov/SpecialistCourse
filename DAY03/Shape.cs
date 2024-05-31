@@ -17,5 +17,6 @@ namespace DAY03
         }
 
         public abstract void Draw();
+        
     }
 }
