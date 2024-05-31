@@ -25,5 +25,11 @@ namespace DAY03
         }
 
         public override string ToString() => ($"This shape point ({X},{Y}) colour = {Colour}");
+
+        public void MoveBy(int dx, int dy)
+        {
+            this.X += dx;
+            this.Y += dy;
+        }
     }
 }
