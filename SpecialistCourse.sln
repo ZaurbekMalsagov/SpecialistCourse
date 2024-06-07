@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAY03_Geometry", "DAY03_Geo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAY04", "DAY04\DAY04.csproj", "{B4B4BDFF-1B73-4E97-BEAA-0CE5B6ED87BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAY04_homework", "DAY04_homework\DAY04_homework.csproj", "{997177EE-1476-486A-B2F4-546AA5A3A5C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B4B4BDFF-1B73-4E97-BEAA-0CE5B6ED87BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B4BDFF-1B73-4E97-BEAA-0CE5B6ED87BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B4BDFF-1B73-4E97-BEAA-0CE5B6ED87BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997177EE-1476-486A-B2F4-546AA5A3A5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997177EE-1476-486A-B2F4-546AA5A3A5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997177EE-1476-486A-B2F4-546AA5A3A5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997177EE-1476-486A-B2F4-546AA5A3A5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

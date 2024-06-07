@@ -6,7 +6,7 @@ namespace DAY04
     {
         static void Main(string[] args)
         {
-            CreateAndKillClass();
+            CreateObjectClass();
             // Type? stringType = Type.GetType("System.String");
             Type? stringInfo = typeof(string).GetTypeInfo();
             foreach (var typeInfo in stringInfo.GetMethods())
@@ -20,7 +20,7 @@ namespace DAY04
 
         }
 
-        static void CreateAndKillClass()
+        static void CreateObjectClass()
         {
             DeadClass dead = new DeadClass();
         }
