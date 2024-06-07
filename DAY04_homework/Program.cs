@@ -16,6 +16,21 @@ namespace DAY04_homework
 
 
             Console.WriteLine("Serialize books");
+
+            books = null;
+
+            using (StreamReader streamReader = new StreamReader(Path.Combine("..", "..", "..", "books.txt")))
+            {
+                XmlSerializer deXml = new XmlSerializer(typeof(Book[]));
+                books = (Book[])deXml.Deserialize(streamReader);
+            }
+
+            foreach (var b in books) {
+                Console.WriteLine(b);
+            
+            }
+
+            Console.WriteLine("Deserialization ended");
         }
     }
 }
